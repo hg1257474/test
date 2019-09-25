@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CountDown from "./CountDown";
 import "./index.css";
-import * as Team from "./team.svg";
+import Team from "./team.svg";
 export default ({
   participantTotal,
   endDate,
@@ -30,7 +30,8 @@ export default ({
       <img src={headerImg} className={"full-size"} />
       <div className="clear-float">
         <span style={{ marginTop: "1em", border: "1px solid white" }}>
-          <Team />{quota}人团
+          <Team />
+          {quota}人团
         </span>
         <span style={{ marginTop: "0.8em" }}>
           ￥<span style={{ fontSize: "22px" }}>{presentPrice}</span>
